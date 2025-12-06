@@ -1,0 +1,72 @@
+body{
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0;
+}
+header{
+    margin: 32px;
+}
+h1{
+    display: inline-block;
+    font-weight: 400;
+}
+.links {
+    display: inline-block;
+}
+.links li {
+    display: inline-block;
+    
+}.links a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0px 8px;
+    border-bottom: 1px solid black;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+    padding: 15px;
+}
+
+.card {
+   
+    background-color: #f9f9f9; /
+    text-align: center; 
+}
+
+.card img {
+    height: 500px;
+    width: 100%;      
+    object-fit: cover; 
+    display: block;    
+    border-radius: 8px; 
+}
+
+.card h2{
+    font-weight: lighter;
+    margin: 8px 0px 16px 0px;
+}
+.why{
+    margin: 100px 200px;
+    width: 50%;
+}
+h3{
+    font-weight: 200;
+    font-style: italic;
+    font-size: 25px;
+}
+h4{
+    color: red;
+    border-bottom: 1px solid black;
+    font-size: 50px;
+    font-weight: 100;
+    font-style: italic;
+    margin-top: 0px;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+.contact p{
+    margin: 0;
+    font-weight: 600;
+}
