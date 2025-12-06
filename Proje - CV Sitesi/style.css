@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+}
+
+.navsection{
+    background-color: darkmagenta;
+    color: white;
+    min-height: 90vh;
+   
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 32px;
+}
+
+.links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 16px;
+}
+
+
+.contact{
+    background-color: white;
+    border-radius: 30px;
+    padding: 16px 24px;
+    text-decoration: none;
+    color: darkmagenta;
+}
+
+.contact:hover {
+    opacity: 0.8;
+}
+
+.personal{
+    padding: 0px 20%;
+}
+
+.title{
+    font-size: 60px;
+    letter-spacing: 2px;
+    padding: 30px 0px;
+}
+
+.hakkımda{
+    display: flex;
+    justify-content: space-between;
+}
+.hakkımda p{
+    width: 50%;   
+}
+
+.skills{
+    list-style: none;
+    display: flex;
+   
+
+}
+.skills li {
+    padding: 15px;
+}
+
+.blogsection{
+    padding: 64px 20%;
+}
+
+.maintitle{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+.blogtext {
+    font-size: 20px;
+}
+
+.blogtitle{
+    font-weight: 200;
+}
+
+.blogpost {
+    margin-top: 40px;
+}
+
+.canlıegitim{
+    background-color: lightgray;
+    padding: 64px 20%;
+}
+
+.egitimtitle{
+    font-size: 60px;
+    font-weight: 300;
+}
+.egitim{
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.egitim{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.eventtitle{
+    font-size: x-large;
+}
+
+.eventdate{
+    color: gray;
+
+}
+footer{
+    background-color: black;
+    padding: 32px;
+}
+img{
+    width: 60px;
+    margin: 8px;
+    
+}
+.images{
+    text-align: center;
+}
