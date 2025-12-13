@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Projesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h2>Logo</h2>
+        </div>
+        
+        <div class="mobile-icon" onclick="toggleMenu()">
+            <span>&#9776;</span> </div>
+
+        <nav class="navbar" id="navMenu">
+            <a class="header-link" href="#">Anasayfa</a>
+            <a class="header-link" href="#">Hakkımızda</a>
+            <a class="header-link" href="#">İletişim</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h3>Efsane Banner</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, tenetur sequi doloremque nobis amet voluptas eum fuga dolorum.</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="card-grid">
+            <div class="card">
+                <img src="images/1.jpg" alt="Resim 1">
+                <div class="card-body">
+                    <h3>Efsane Resim 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/2.jpg" alt="Resim 2">
+                <div class="card-body">
+                    <h3>Efsane Resim 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/3.jpg" alt="Resim 3">
+                <div class="card-body">
+                    <h3>Efsane Resim 3</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/4.jpg" alt="Resim 4">
+                <div class="card-body">
+                    <h3>Efsane Resim 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <section class="form-section">
+        <form class="general-form">
+            <h3>Kayıt Formu</h3>
+            <label>Ad</label>
+            <input type="text" name="firstname" placeholder="Adınızı giriniz">
+
+            <label>Soyad</label>
+            <input type="text" name="lastname" placeholder="Soyadınızı giriniz">
+
+            <label for="country">Ülke</label>
+            <select name="country">
+                <option value="tr">Türkiye</option>
+                <option value="fr">Fransa</option>
+                <option value="en">İngiltere</option>
+            </select>
+
+            <input type="submit" value="Kaydet">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <h3>Tüm hakları saklıdır &copy; 2025</h3>
+    </footer>
+    
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("navMenu");
+            // 'active' sınıfını ekler veya çıkarır
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

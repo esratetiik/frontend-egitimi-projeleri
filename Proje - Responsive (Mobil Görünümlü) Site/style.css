@@ -1,0 +1,194 @@
+/* Genel Ayarlar (Reset) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Padding ekleyince kutu büyümesini engeller */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+/* Header Tasarımı */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Daha modern koyu gri */
+    height: 70px;
+    padding: 0 20px;
+    color: white;
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px; /* Linkler arası boşluk */
+}
+
+.header-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.header-link:hover {
+    color: #ff9800; /* Hover rengi turuncu */
+}
+
+.mobile-icon {
+    display: none; /* Masaüstünde gizle */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Banner Tasarımı */
+.banner {
+    background-image: url('images/banner.jpg'); /* Resim yoksa gri görünür */
+    background-color: #555; 
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center; /* Yatay ortalama */
+    align-items: center; /* Dikey ortalama */
+    text-align: center;
+    color: white;
+}
+
+.banner-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Yazı arkasına yarı saydam siyah */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+}
+
+/* Kartlar (Grid) Tasarımı */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap; /* Sığmayanları alt satıra at */
+    justify-content: center;
+    gap: 30px; /* Kartlar arası boşluk */
+}
+
+.card {
+    background-color: white;
+    width: 300px; /* Sabit genişlik yerine max-width de olabilir */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Üzerine gelince yukarı kalkma efekti */
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Form Tasarımı */
+.form-section {
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #e9ecef;
+}
+
+.general-form {
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.general-form h3 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 8px 0 20px 0;
+    outline: none;
+}
+
+input[type=text]:focus, select:focus {
+    border-color: #ff9800; /* Odaklanınca kenarlık rengi */
+}
+
+input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745; /* Yeşil */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type=submit]:hover {
+    background-color: #218838;
+}
+
+/* Footer Tasarımı */
+.footer {
+    background-color: #333;
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Responsive (Mobil) Ayarlar --- */
+@media screen and (max-width: 768px) {
+    .mobile-icon {
+        display: block; /* Mobilde ikonu göster */
+    }
+
+    .navbar {
+        display: none; /* Mobilde menüyü gizle */
+        flex-direction: column;
+        width: 100%;
+        background-color: #444;
+        position: absolute;
+        top: 70px; /* Header yüksekliği kadar aşağı */
+        left: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* JavaScript ile 'active' sınıfı eklenince menü açılır */
+    .navbar.active {
+        display: flex;
+    }
+
+    .card {
+        width: 100%; /* Mobilde kartlar tam genişlik olsun */
+    }
+}
