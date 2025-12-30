@@ -122,43 +122,120 @@ h2 {
 }
 
 .iletisim-kutusu {
-        background-color: #e6f7ff; 
-        padding: 30px;
-        border-radius: 15px; 
-        text-align: center;
-        margin-top: 20px;
-    }
+    background-color: #e6f7ff; 
+    padding: 30px;
+    border-radius: 15px; 
+    text-align: center;
+    margin-top: 20px;
+}
 
 
-    .iletisim-listesi {
-        list-style: none; 
-        padding: 0;
-        margin: 0;
-        
-       
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        gap: 20px; 
-    }
+.iletisim-listesi {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
+}
 
     
-    .iletisim-listesi li {
-        display: flex;
-        align-items: center;
-        justify-content: center; 
-        background-color: white; 
-        padding: 10px;
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
-    }
+.iletisim-listesi li {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: white; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+}
 
    
-    .iletisim-listesi img {
-        margin-right: 10px; 
-        width: 30px;
-        height: 30px;
-        object-fit: contain; 
-    }
+.iletisim-listesi img {
+    margin-right: 10px; 
+    width: 30px;
+    height: 30px;
+    object-fit: contain; 
+}
+
+.mesaj-gönder{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    background-color: #e6f7ff; 
+    padding: 30px;
+    border-radius: 15px; 
+    margin: 50px 0px 40px 0px;
+}
+
+.kutu {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); 
+    text-align: left; 
+}
+
+
+.bilgi-kutu{
+    background-color: #e6f7ff; 
+    padding: 30px;
+    border-radius: 15px; 
+    text-align: center;
+    margin-top: 20px;
+}
+.form-kutu{
+    background-color: #e6f7ff; 
+    padding: 30px;
+    border-radius: 15px; 
+    text-align: center;
+    margin-top: 20px;
+}
+.gonder-btn {
+    width: 100%;
+    background-color: rgb(91, 167, 221); 
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.gonder-btn:hover {
+    background-color: rgb(71, 147, 201);
+}
+
+.bilgi-listesi{
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    gap: 20px; 
+}
+.bilgi-listesi li{
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: black;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%; 
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    font-family: inherit; 
+}
 
 .rezervasyonlar{
     max-width: 800px;
@@ -235,6 +312,7 @@ h2 {
     display: flex ;
     justify-content: flex-end ;
     padding:  15px;
+    gap: 20px;
 }
 
 .ticket-footer button{
@@ -244,3 +322,184 @@ h2 {
     font-weight: bold;
     transition: background-color 0.3s;
 }
+
+.galeri{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 20px; 
+    padding: 45px;
+}
+
+.galeri-card{
+    text-align: center;
+}
+
+.galeri-card img {
+    height: 500px;
+    width: 100%;      
+    object-fit: cover; 
+    display: block;    
+    border-radius: 8px; 
+    cursor: zoom-in;
+    transition: all 0.3s ease;
+}
+.galeri-card img.zoomed {
+    position: fixed;       
+    top: 50%;              
+    left: 50%;             
+    transform: translate(-50%, -50%); 
+    width: 90vw;           
+    height: 90vh;          
+    object-fit: contain;     
+    z-index: 1000;         
+    background-color: rgba(0, 0, 0, 0.9); 
+    border-radius: 0;      
+    padding: 20px;         
+    box-sizing: border-box;
+    cursor: zoom-out;      
+}
+
+.galeri-card p{
+    font-weight: 600;
+    font-size: x-large;
+    margin: 8px 0px 16px 0px;
+    padding: 10px;
+}
+.sepet{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.cart-footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.price-label {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 2px;
+}
+
+.price-amount {
+    font-size: 22px;
+    font-weight: bold;
+    color: #27ae60; 
+    font-family: 'Arial', sans-serif;
+}
+
+.remove-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: none;
+}
+
+.remove-btn:hover {
+    background-color: #c0392b;
+}
+
+
+.summary-container {
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.05); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+}
+
+.summary-details h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    text-align: left;
+}
+
+.summary-details p {
+    margin: 5px 0 0 0;
+    color: #777;
+}
+
+.summary-total {
+    text-align: right;
+}
+
+.total-label {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.total-amount {
+    font-size: 32px;
+    font-weight: 800;
+    color: #2c3e50;
+    margin: 5px 0 15px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.checkout-btn {
+    background-color: #27ae60;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s, background-color 0.2s;
+    box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+}
+
+.checkout-btn:hover {
+    background-color: #219150;
+    transform: translateY(-2px);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 8% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+
