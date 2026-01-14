@@ -1,0 +1,1 @@
+AĞ TABANLI PROGRAMLAMAYA GİRİŞ FİNAL PROJE TESLİM VİDEOSU = https://youtu.be/WBCjgnXt5bs?si=qwJESUdpXo1jTT_M
