@@ -1,0 +1,10 @@
+1. Ana sayfadaki popüler tekliflere sepete ekle butonu ekle. butona biletin data özelliklerini eklemeyi unutma. 
+2.Sepet oluştur, ürün eklendikçe sepet sayacı artsın.sepete ekleme işleminin kodunu js ile yaz.
+3. bilet arama kısmında web scraper istenen sonuçlara göre veri listeleme
+4. listelenen bilet arama sonuçlarına fiyat sıralaması ekleme
+5. sepetim sayfasına satın alma ekle burada kullanıcıdan kart bilgisi gibi şeyler istensin.
+
+Ödeme başarılı bir şekilde gerçekleştirildikten sonra kullanıcıya “Ödeme başarılı oldu ve rezervasyonunuz tamamlandı.” mesajı iletilecek. 
+
+Rezervasyonlarım sayfasında kullanıcı daha önce yaptığı rezervasyonları görebilecek. 
+

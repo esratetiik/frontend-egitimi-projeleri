@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Bilet Ara</title>
+    <link rel="icon" href="Fotoğraflar/icon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <h1><img style="vertical-align: middle;  border-radius: 30px;" src="Fotoğraflar/Uçak.png" width="50px"> UÇAK BİLETİ </h1>
+            <p>Binlerce rota uygun fiyatlara!</p>
+        </header>
+    <div class="baslik-container">
+        <nav>
+            <ul>
+                <li><a href="anasayfa.html"><img style="vertical-align: middle; border-radius: 30px;" src="Fotoğraflar/anasayfa.png" width="30px"> Ana Sayfa</a></li>
+                <li><a href="arama.html"><img style="vertical-align: middle; border-radius: 30px;" src="Fotoğraflar/bilet.jfif" width="30px"> Bilet Ara</a></li>
+               <li class="dropdown">
+    <a href="rezervasyon.html">
+        <img style="vertical-align: middle; border-radius: 30px;" src="Fotoğraflar/rezervasyon.png" width="30px"> 
+        Rezervasyonlarım
+    </a>
+    <ul class="submenu">
+        <li><a href="rezervasyon.html#guncel-ucus">Güncel Uçuşlar</a></li>
+        <li><a href="rezervasyon.html#gecmis-ucus">Geçmiş Uçuşlar</a></li>
+    </ul>
+</li>
+                <li><a href="iletişim.html"> <img style="vertical-align: middle; border-radius: 30px;" src="Fotoğraflar/iletişim.jfif" width="30px"> İletişim</a></li>
+                <li><a href="markalar.html"><img style="vertical-align: middle; border-radius: 30px;" src="Fotoğraflar/marka.png" width="30px"> Markalarımız </a></li>
+                <li><a href="sepet.html"><img style="vertical-align: middle; border-radius: 30px;" src="Fotoğraflar/sepet.jpg" width="30px"> Sepetim</a></li>
+                <li><a href="galeri.html"><img style="vertical-align: middle; border-radius: 30px;" src="Fotoğraflar/galeri.png" width="30px"> Galeri</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class="siralama">
+        <label for="sirala"> Sıralama: </label>
+        <select id="sirala">
+            <option value="varsayilan">Önerilen</option>
+            <option value="artan">Fiyat: Artan</option>
+            <option value="azalan">Fiyat: Azalan</option>
+        </select>
+
+    </div>
+
+     <div class="container">
+        <h2>UÇAK BİLETİ ARA</h2>
+            <form class="search-form" action="/arama" method="get">
+                <div class="form-group">
+                    <label for="kalkis">Kalkış Şehri:</label>
+                    <input type="text" id="kalkis" name="kalkis" placeholder="Örn: İstanbul" required>
+                </div>
+                <div class="form-group">
+                    <label for="varis">Varış Şehri:</label>
+                    <input type="text" id="varis" name="varis" placeholder="Örn: Ankara" required>
+                </div>
+                <div class="form-group">
+                    <label for="gidis-tarih">Gidiş Tarihi:</label>
+                    <input type="date" id="gidis-tarih" name="gidis-tarih" required>
+
+                    <label for="donus-tarihi">Dönüş Tarihi:</label>
+                    <input type="date" id="donus-tarihi" name="donus-tarihi" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="yolcu">Yolcu Sayısı:</label>
+                    <select name="yolcu" id="yolcu">
+                        <option value="1">1 Yetişkin</option>
+                        <option value="2">2 Yetişkin</option>
+                        <option value="3">3 Yetişkin</option>
+                        <option value="4">1 Çocuk</option>
+                        <option value="5">2 Çocuk</option>
+                        <option value="6">3 Çocuk</option>
+                        <option value="7">Bebek</option>
+                    </select>
+
+                    <label for="sinif">Sınıf:</label>
+                    <select name="sinif" id="sinif">
+                        <option value="ekonomi">Ekonomi</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+
+                <button type="submit">Bilet Ara</button>
+            </form>
+        </div>
+    
+    <div class="container">
+    <h2>Uygun Biletler</h2>
+    <div id="bilet-listesi"></div>
+</div>
+
+
+
+    <footer>
+        <p> &copy; Tüm hakları saklıdır. Güvenli ödeme ve iade garantisi.</p>
+    </footer>
+
+    <script src="main.js"></script> 
+    
+    </body>
+</html>
